@@ -1,0 +1,4 @@
+interface:
+  display_name: "README I18n"
+  short_description: "Translate, sync, and localize README files in English and zh-TW"
+  default_prompt: "Use this skill when translating README files to Traditional Chinese (Taiwan), syncing README.md with README.zh-TW.md, preserving an English README while maintaining a Chinese version, or converting a README into a bilingual format without changing commands or code blocks."

@@ -1,5 +1,9 @@
 # notebooklm-mcp-go
 
+[English](#english) | [繁體中文](#繁體中文)
+
+## English
+
 A **Golang rewrite** of [PleasePrompto/notebooklm-mcp](https://github.com/PleasePrompto/notebooklm-mcp) — an MCP server that lets AI agents (Claude Code, Cursor, Codex…) query Google NotebookLM notebooks for source-grounded, citation-backed answers powered by Gemini.
 
 ## What's different from the TypeScript original?
@@ -384,15 +388,15 @@ Your Task
 │   ├── auth/auth_manager.go         # Browser state / cookie persistence
 │   ├── library/
 │   │   ├── types.go                 # Library data types
-│   │   └── library.go              # Persistent notebook library (library.json)
+│   │   └── library.go               # Persistent notebook library (library.json)
 │   ├── session/session.go           # Browser sessions + session manager
 │   ├── tools/
 │   │   ├── definitions.go           # MCP tool definitions (schemas + descriptions)
-│   │   └── handlers.go             # Tool implementation logic
-│   ├── mcp/server.go               # JSON-RPC 2.0 MCP server (stdio transport)
+│   │   └── handlers.go              # Tool implementation logic
+│   ├── mcp/server.go                # JSON-RPC 2.0 MCP server (stdio transport)
 │   └── utils/
-│       ├── logger.go               # Structured logging to stderr
-│       └── settings.go             # Profile/tool filtering settings
+│       ├── logger.go                # Structured logging to stderr
+│       └── settings.go              # Profile/tool filtering settings
 └── go.mod
 ```
 
@@ -446,6 +450,7 @@ Your Task
 ## Rate Limits
 
 Free Google accounts: **50 queries/day**. When the limit is hit:
+
 - `ask_question` returns a `RateLimitError`
 - Use `re_auth` to switch to a different Google account
 - Or wait until the next day
@@ -457,3 +462,7 @@ Upgrade to **Google AI Pro/Ultra** for 5× higher limits.
 ## License
 
 MIT — same as the original TypeScript project.
+
+## 繁體中文
+
+中文版請參考 [README.zh-TW.md](README.zh-TW.md)。
